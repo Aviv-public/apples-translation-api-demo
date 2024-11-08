@@ -181,8 +181,6 @@ struct ContactSellerView: View {
     }
 }
 
-struct ContactSellerView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContactSellerView()
-    }
+#Preview {
+    ContactSellerView()
 }
