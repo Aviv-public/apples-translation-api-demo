@@ -1,6 +1,7 @@
 import SwiftUI
 import Translation
 
+// Define a view that displays the availability of a language pairing.
 struct LanguageAvailabilityView: View {
     @Environment(LanguageAvailabilityViewModel.self) var viewModel
 

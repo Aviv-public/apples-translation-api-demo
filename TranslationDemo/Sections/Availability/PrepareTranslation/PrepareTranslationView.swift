@@ -46,6 +46,8 @@ struct PrepareTranslationView: View {
         .translationTask(configuration) { session in
             if buttonTapped {
                 do {
+                    // Prepare the translation session.
+                    // This will download the required language packs.
                     try await session.prepareTranslation()
                 } catch {
                     // Handle any errors.

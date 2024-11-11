@@ -86,14 +86,18 @@ struct RealEstateAgentProfileView: View {
 
     private func translateSequence(_ session: TranslationSession) async {
         Task { @MainActor in
+            // Create an array of requests. Use the index as the client identifier.
             let requests: [TranslationSession.Request] =  reviews.enumerated().map { (index, review) in
                 .init(sourceText: review.text, clientIdentifier: "\(index)")
             }
 
             do {
+                // Translate the batch of requests.
+                // For each response received, update the corresponding review in the array.
                 for try await response in session.translate(batch: requests) {
                     guard let index = Int(response.clientIdentifier ?? "") else { continue }
                     withAnimation {
+                        // The client identifier is used to match the response to the original reviews
                         reviews[index].text = response.targetText
                     }
                 }
