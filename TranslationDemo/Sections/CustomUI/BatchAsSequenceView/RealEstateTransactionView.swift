@@ -50,19 +50,18 @@ struct RealEstateAgentProfileView: View {
                 ForEach(reviews) { review in
                     LazyVStack(alignment: .leading) {
                         VStack(alignment: .leading) {
-                            Text(review.text) // Review text
+                            Text(review.text)
                                 .font(.body)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            Text("Reviewed by \(review.reviewerName) on \(review.date)") // Reviewer name and date
+                            Text("Reviewed by \(review.reviewerName) on \(review.date)")
                                 .font(.footnote)
                                 .foregroundColor(.gray)
                         }
                         .padding()
-                        .cornerRadius(8) // Rounded corners
-                        .shadow(radius: 2) // Shadow for depth
+                        .cornerRadius(8)
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.gray.opacity(0.5), lineWidth: 1) // Border
+                                .stroke(Color.gray.opacity(0.5), lineWidth: 1)
                         )
                     }
                     .padding(.vertical, 4)
