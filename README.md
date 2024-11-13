@@ -21,7 +21,7 @@ In the **System UI Translation** section, we demonstrate how to leverage the bui
 The **Custom UI Translation** section illustrates how developers can use the Translation API within their own custom-designed UI components. This section is perfect for applications needing a unique translation experience while still taking advantage of the API’s powerful capabilities.
 
 ![single string](https://github.com/user-attachments/assets/93e43ef3-2e40-4102-8fb4-39046f604f83)
-![sequential](https://github.com/user-attachments/assets/610354ba-4f63-4bad-b9a2-1585a2d32ec8)
+![sequential](https://github.com/user-attachments/assets/365f7f13-56ff-4d87-8aaa-1730015c2747)
 ![batch of strings](https://github.com/user-attachments/assets/b76b0108-4e29-4992-b971-2ebd120bb656)
 
 
