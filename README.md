@@ -2,6 +2,10 @@
 
 This demo app showcases the capabilities of Apple's new Translation API for developers. The app is divided into three main sections: **System UI Translation**, **Custom UI Translation**, and **Availability**. Each section highlights different aspects of the API, providing a comprehensive view of its integration and capabilities.
 
+Take a look at the medium article below to follow along the sections in detail.
+
+[iOS 18 — Apple's Translation API](https://medium.com/aviv-product-tech-blog/ios-18-apples-translation-api-ea9a5afc281f)
+
 ## Sections
 
 ### 1. System UI Translation
